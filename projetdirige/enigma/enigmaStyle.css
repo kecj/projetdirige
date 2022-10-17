@@ -1,0 +1,224 @@
+/*#region scrollbar*/
+
+    input:-webkit-autofill{
+    -webkit-text-fill-color: green;
+    transition: background-color 5000s ease-in-out 0s;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.85); 
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: green; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #004d00;
+    }
+
+/*#endregion*/
+
+/*#region autres*/
+    a {
+        cursor: default;
+        color: #33bbff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+
+    body {
+        margin: 0px;
+        -webkit-appearance: none;
+        font-family: "Lucida Console", monospace;
+        color: #33bbff;
+
+        /* Background */
+        background-image: url("./imagesEnigma/enigma.png");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .message_erreur {
+        display: none;
+        color: red;
+    }
+
+    .message_correcte {
+        display: none;
+        color: green;
+    }
+
+/*#endregion*/
+
+/*#region boutons*/
+
+    .bouton_principal {
+        background-color: black;
+        text-align: center;
+
+        /* Border */
+        border: 1px solid #33bbff;
+        border-radius: 5px;
+
+        /* Margin */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bouton_principal:hover {
+        background-color: rgba(51, 187, 255, 0.5);;
+    }
+
+    .submit_button {
+
+        color: #33bbff;
+        background-color: black;
+        padding: 10px;
+        width: 150px;
+        
+        /* Border */
+        border: 1px solid #33bbff;
+        border-radius: 5px;
+        
+    }
+    
+    .submit_button:hover {
+        cursor: pointer;
+        background-color: rgba(51, 187, 255, 0.5);
+    }
+/*#endregion*/
+
+/*#region radio buttons*/
+
+    input[type="radio"]{
+        appearance: none;
+        padding: 10px;
+        background-color: black;
+        border: 1px solid #33bbff;
+        border-radius: 100px;
+    }
+
+    input[type="radio"]:checked{
+        background-color: rgba(51, 187, 255, 0.8); 
+    }
+
+/*#endregion*/
+
+/*#region header*/
+
+    .header{
+        background-color: rgba(0, 0, 0, 0.85);
+        border-bottom: 1px solid #33bbff;
+
+        /* flex-box properties */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .header_title {
+        font-size: xx-large;
+    }
+
+    .header > * {
+        /* Padding */
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+/* #endregion */
+
+/*#region body*/
+
+    .conteneur_principal {
+        width: 85%;
+
+        /* Background */
+        background-color: rgba(0, 0, 0, 0.85);
+        background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.85) , rgba(51, 187, 255, 0.2), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+        background-size: 25px 20px;
+
+        /* Padding */
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        /* Border */
+        border: 1px solid #33bbff;
+        border-radius: 5px;
+
+        /* Margin */
+        margin: auto;
+        margin-top: 2.5%;
+        margin-bottom: 150px;
+
+        /* flex properties */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .conteneur_principal > * {
+        margin: auto;
+    }
+
+    .conteneur_choix_difficulté {
+        /* flex properties */
+        display: flex;
+        justify-content: center;
+    }
+
+    .choix_difficulté {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .choix_difficulté > * {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    
+
+/*#endregion*/
+
+/*#region Énigmes*/
+
+    .énigme_titre {
+        font-size: 25px;
+    }
+    
+    .conteneur_énigme {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: black;
+        border: 1px solid #33bbff;
+        border-radius: 5px;
+        padding: 30px;
+    }
+
+    .zone_texte {
+        background-color: black;
+        color:#33bbff;
+        border: 1px solid #33bbff;
+        border-radius: 5px;
+    }
+
+/*#endregion*/
